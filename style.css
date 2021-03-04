@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+
+}
+#container{
+    width: 1000px;
+    height: 600px;
+    background: repeating-linear-gradient(45deg, rgb(230, 24, 24),black 10%);
+    margin:28px auto;
+    
+}
+h1{
+    text-align: center;
+    color:rgb(166, 255, 0);
+    width: 500px;
+    margin:  auto;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    font-family: cursive;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 25px;
+    
+    
+}
+#calculator{
+    width: 300px;
+    height: 500px;
+    background: rgb(31, 20, 5);
+    margin:auto;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    box-shadow:5px 2px 15px 8px black, 5px 2px 15px 8px rgb(58, 57, 57);    
+}
+#result{
+    width: 300px;
+    height: 100px;
+    
+}
+
+#output-value{
+    width: 300px;
+    height: 100px;
+    background: mediumaquamarine;
+    box-shadow: inset 3px 3px 0px 4px black, 
+                inset -3px -3px 0px 4px black;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+    
+}
+#keyboard{
+    width:300px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5px;
+
+}
+.operator ,.number{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-position:center;
+    transition:background 0.8s;
+    
+}
+.operator:focus, .number:focus{
+    outline:none;
+}
+
+
+.operator:active, .number:active{
+    background-color:#c72d2d;
+    background-size: 100%;
+    transition: background 0s;
+}
+button:nth-child(1),
+button:nth-child(2),
+button:nth-child(3){
+    background-color: gray;
+}
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16){
+    background-color: rgb(245, 96, 10);
+}
+
+button:nth-child(17),
+button:nth-child(18),
+button:nth-child(19){
+    background-color: greenyellow;
+}
+button:nth-child(20){
+    background-color: rgb(34, 167, 167);
+}
+.number{
+    background-color:khaki;
+}
